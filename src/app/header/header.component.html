@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Jorge's Material App</span>
+    <span class="example-spacer"></span>
+      <div>
+        <div class="btn-wrapper">
+          <button mat-mini-fab class="btn btn-light" (click)="changeTheme('light-theme')"></button>
+          <button mat-mini-fab class="btn btn-dark" (click)="changeTheme('dark-theme')"></button>
+          <button mat-mini-fab class="btn btn-jojo" (click)="changeTheme('jojo-theme')"></button>
+        </div>
+      </div>
+      <mat-icon class="example-icon">favorite</mat-icon>
+      <mat-icon class="example-icon">delete</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
