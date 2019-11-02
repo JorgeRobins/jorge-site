@@ -1,3 +1,31 @@
+// Custom Theming for Angular Material
+@import '~@angular/material/theming';
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Light, dark and jojo (bizarre) custom themes
+@import './styles/themes/light-theme.scss';
+@import './styles/themes/dark-theme.scss';
+@import './styles/themes/jojo-theme.scss';
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+.light-theme {
+    @include angular-material-theme($light-theme);
+}
+
+.dark-theme {
+    @include angular-material-theme($dark-theme);
+}
+
+.jojo-theme {
+    @include angular-material-theme($jojo-theme);
+}
+
 // Global styles
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
