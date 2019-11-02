@@ -1,15 +1,62 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <span>Jorge's Material App</span>
-    <span class="example-spacer"></span>
-      <div>
-        <div class="btn-wrapper">
-          <button mat-mini-fab class="btn btn-light" (click)="changeTheme('light-theme')"></button>
-          <button mat-mini-fab class="btn btn-dark" (click)="changeTheme('dark-theme')"></button>
-          <button mat-mini-fab class="btn btn-jojo" (click)="changeTheme('jojo-theme')"></button>
-        </div>
-      </div>
-      <mat-icon class="example-icon">favorite</mat-icon>
-      <mat-icon class="example-icon">delete</mat-icon>
+    <span class="header-spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="themeMenu">
+      <mat-icon>color_lens</mat-icon>
+    </button>
   </mat-toolbar-row>
 </mat-toolbar>
+
+
+<mat-menu #themeMenu="matMenu">
+  <mat-grid-list cols="2" class="mat-grid-list">
+    
+    <mat-grid-tile class="mat-grid-tile">
+      <p>Theme</p>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-grid-tile">
+      <button mat-mini-fab class="btn btn-light" (click)="changeTheme('light-theme')"></button>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-grid-tile">
+      <button mat-mini-fab class="btn btn-dark" (click)="changeTheme('dark-theme')"></button>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-grid-tile">
+      <button mat-mini-fab class="btn btn-jojo" (click)="changeTheme('jojo-theme')"></button>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+</mat-menu>
+
+
+
+
+
+<!-- 
+
+  OLD
+
+<button mat-menu-item>
+<button mat-mini-fab class="btn btn-light" (click)="changeTheme('light-theme')"></button>
+</button>
+<button mat-menu-item>
+<button mat-mini-fab class="btn btn-dark" (click)="changeTheme('dark-theme')"></button>
+</button>
+<button mat-menu-item>
+<button mat-mini-fab class="btn btn-jojo" (click)="changeTheme('jojo-theme')"></button>
+</button>
+
+
+
+<div>
+  <div class="btn-wrapper">
+    <button mat-mini-fab class="btn btn-light" (click)="changeTheme('light-theme')"></button>
+    <button mat-mini-fab class="btn btn-dark" (click)="changeTheme('dark-theme')"></button>
+    <button mat-mini-fab class="btn btn-jojo" (click)="changeTheme('jojo-theme')"></button>
+  </div>
+</div>
+<mat-icon class="header-icon">color_lens</mat-icon>
+-->

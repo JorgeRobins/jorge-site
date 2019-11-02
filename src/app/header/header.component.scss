@@ -1,7 +1,23 @@
-.example-icon {
+.header-icon {
   padding: 0 14px;
 }
 
-.example-spacer {
+.header-spacer {
   flex: 1 1 auto;
+}
+
+.btn-light {
+  background-color: white !important;
+}
+
+.btn-dark {
+  background-color: black !important;
+}
+
+.btn-jojo {
+  background-color: pink !important;
+}
+
+.mat-grid-list {
+  background-color: gray;
 }
