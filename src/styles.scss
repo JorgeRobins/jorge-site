@@ -9,6 +9,7 @@
 // Light, dark and jojo (bizarre) custom themes
 @import './styles/themes/light-theme.scss';
 @import './styles/themes/dark-theme.scss';
+@import './styles/themes/grayscale-theme.scss';
 @import './styles/themes/jojo-theme.scss';
 
 // Include theme styles for core and each component used in your app.
@@ -22,6 +23,10 @@
     @include angular-material-theme($dark-theme);
 }
 
+.grayscale-theme {
+    @include angular-material-theme($grayscale-theme);
+}
+
 .jojo-theme {
     @include angular-material-theme($jojo-theme);
 }
@@ -31,10 +36,10 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .btn wrapper {
-    padding: 20px;
+  padding: 20px;
 }
 
 .btn {
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
 }

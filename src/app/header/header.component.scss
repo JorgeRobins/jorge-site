@@ -14,10 +14,15 @@
   background-color: black !important;
 }
 
+.btn-grayscale {
+  background-color: darkgray !important;
+}
+
 .btn-jojo {
   background-color: pink !important;
 }
 
 .mat-grid-list {
-  background-color: gray;
+  background-color: lightgray;
+  border: solid 1.5px #000;
 }

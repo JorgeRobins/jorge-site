@@ -2,22 +2,19 @@
   <mat-toolbar-row>
     <span>Jorge's Material App</span>
     <span class="header-spacer"></span>
-    <button mat-icon-button [matMenuTriggerFor]="themeMenu">
-      <mat-icon>color_lens</mat-icon>
-    </button>
+    <mat-icon mat-icon-button [matMenuTriggerFor]="themeMenu">color_lens</mat-icon>
   </mat-toolbar-row>
 </mat-toolbar>
 
-
-<mat-menu #themeMenu="matMenu">
+<mat-menu #themeMenu="matMenu" xPosition="after">
   <mat-grid-list cols="2" class="mat-grid-list">
     
     <mat-grid-tile class="mat-grid-tile">
-      <p>Theme</p>
-    </mat-grid-tile>
-
-    <mat-grid-tile class="mat-grid-tile">
       <button mat-mini-fab class="btn btn-light" (click)="changeTheme('light-theme')"></button>
+    </mat-grid-tile>
+    
+    <mat-grid-tile class="mat-grid-tile">
+        <button mat-mini-fab class="btn btn-grayscale" (click)="changeTheme('grayscale-theme')"></button>
     </mat-grid-tile>
 
     <mat-grid-tile class="mat-grid-tile">
@@ -30,7 +27,6 @@
 
   </mat-grid-list>
 </mat-menu>
-
 
 
 
