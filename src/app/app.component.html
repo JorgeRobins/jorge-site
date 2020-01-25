@@ -1,8 +1,18 @@
+<div [ngClass]="{'dark-theme': isDarkTheme | async}">
+  <div class="mat-app-background">
+    <app-header></app-header>
+    <app-home></app-home>
+    <div class="content">
+    </div>
+  </div>
+</div>
+
+<!--
 <div [ngClass]="theme">
 
-  <!-- header -->
   <app-header (newThemeEvent)="newThemeEvent($event)"></app-header>
 
   <app-home></app-home>
 
 </div>
+-->

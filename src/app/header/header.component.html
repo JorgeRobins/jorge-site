@@ -1,10 +1,27 @@
 <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <h1>Jorge.co.uk</h1>
+      <div>
+        <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before" (change)="toggleDarkTheme($event.checked)">
+            <i class="material-icons">
+                brightness_medium
+                </i>
+        </mat-slide-toggle>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+<!-- 
+
+  <mat-toolbar color="primary">
   <mat-toolbar-row>
     <span>Jorge's Material App</span>
     <span class="header-spacer"></span>
-    <mat-icon mat-icon-button [matMenuTriggerFor]="themeMenu">color_lens</mat-icon>
+    <button mat-mini-fab class="header-icon" (click)="changeTheme('light-theme')"></button>
+    <button mat-raised-button (click)="changeTheme('light-theme')">Toggle Theme</button>
   </mat-toolbar-row>
 </mat-toolbar>
+
 
 <mat-menu #themeMenu="matMenu" xPosition="after">
   <mat-grid-list cols="2" class="mat-grid-list">
@@ -27,7 +44,7 @@
 
   </mat-grid-list>
 </mat-menu>
-
+-->
 
 
 

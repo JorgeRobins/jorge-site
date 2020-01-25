@@ -13,3 +13,5 @@ $light-theme: mat-light-theme(
     $light-accent,
     $light-warn
 );
+
+@include angular-material-theme($light-theme);

@@ -1,4 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { ThemeService } from '../core/services/theme.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +9,19 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  theme: string;
+  isDarkTheme: Observable<boolean>;
+
+  constructor(private themeService: ThemeService) { }
+
+  ngOnInit() {
+    this.isDarkTheme = this.themeService.isDarkTheme;
+  }
+
+  toggleDarkTheme(checked: boolean) {
+    this.themeService.setDarkTheme(checked);
+  }
+
+  /*theme: string;
 
   @Output() newThemeEvent = new EventEmitter<string>();
 
@@ -21,5 +35,6 @@ export class HeaderComponent implements OnInit {
     this.theme = selectedTheme;
     this.newThemeEvent.emit(this.theme)
   }
+  */
 
 }
