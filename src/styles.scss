@@ -1,12 +1,17 @@
 // Custom Theming for Angular Material
 @import '~@angular/material/theming';
-@import './styles/themes/light-theme';
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+
+// Include light theme as default
+@import './styles/themes/light-theme';
+@include angular-material-theme($light-theme);
+
+// Import dark theme (BehaviourSubject used in theme service for on/off)
 @import './styles/themes/dark-theme.scss';
 
 // Include theme styles for core and each component used in your app.
@@ -16,7 +21,7 @@
 .dark-theme {
     @include angular-material-theme($dark-theme);
 }
-/*
+
 // Global styles
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -28,16 +33,4 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .btn {
   margin-left: 10px !important;
   margin-right: 10px !important;
-}
-*/
-
-html, body {
-  margin: 0;
-  height: 100%;
-}
-
-@media only screen and (max-width: 600px)  {
-  html {
-    font-size: 80%;
-  }
 }

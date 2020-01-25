@@ -1,15 +1,15 @@
 <mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <h1>Jorge.co.uk</h1>
-      <div>
-        <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before" (change)="toggleDarkTheme($event.checked)">
-            <i class="material-icons">
-                brightness_medium
-                </i>
-        </mat-slide-toggle>
-      </div>
-    </mat-toolbar-row>
-  </mat-toolbar>
+  <mat-toolbar-row>
+    <div class="header">
+      <img src="../../assets/images/david_transparent.png" alt="logo"/>
+      <span>Jorge.co.uk</span>
+    </div>
+    <span class="fill-remaining-space"></span>
+    <div>
+      <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before" (change)="toggleDarkTheme($event.checked)"></mat-slide-toggle>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
 
 <!-- 
 
