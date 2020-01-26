@@ -1,15 +1,17 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <div class="header">
-      <img src="../../assets/images/david_transparent.png" alt="logo"/>
-      <span>Jorge.co.uk</span>
-    </div>
+    <span> Jorge.co.uk</span>
     <span class="fill-remaining-space"></span>
+    <a mat-raised-button>Home</a>
+    <a mat-raised-button>My Work</a>
+    <a mat-raised-button>Contact</a>
     <div>
       <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before" (change)="toggleDarkTheme($event.checked)"></mat-slide-toggle>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
+
+
 
 <!-- 
 

@@ -13,19 +13,23 @@ fill-remaining-space {
   flex: 1 1 auto;
 }
 
-.header {
-  overflow: auto
-}
+/*
 
 .header img {
-  float: left;
-  width: 54px;
-  height: 100%;
-  //background-image: url("../../assets/images/david_transparent.png");
-  background-size: contain;
+  //float: left;
+  //width: 54px;
+  //height: 100%;
+  background-image: url("../../assets/images/david_transparent.png");
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+.header {
+  overflow: auto
 }
 
 .header span {
   float: left;
 }
+
+*/
