@@ -12,4 +12,10 @@ export class NavComponent implements OnInit {
   ngOnInit() {
   }
 
+  opened = false;
+
+  log(state) {
+    console.log(state);
+  }
+
 }

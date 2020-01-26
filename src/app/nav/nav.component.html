@@ -1,1 +1,12 @@
-<p>nav works!</p>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav (opened)="log('Opened')" (closed)="log('Closed')" [(opened)]="opened">
+        <button (click)="sidenav.toggle()">
+            <mat-icon color="accent">menu</mat-icon>
+        </button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <button (click)="sidenav.toggle()">
+            <mat-icon color="accent">menu</mat-icon>
+        </button>
+    </mat-sidenav-content>
+</mat-sidenav-container>

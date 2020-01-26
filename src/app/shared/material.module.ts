@@ -20,6 +20,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   imports: [
@@ -42,7 +43,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
      MatTableModule,
      MatPaginatorModule,
      MatCardModule,
-     MatSlideToggleModule
+     MatSlideToggleModule,
+     MatTabsModule
   ],
   exports: [
      MatButtonModule,
@@ -63,7 +65,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
      MatTableModule,
      MatPaginatorModule,
      MatCardModule,
-     MatSlideToggleModule
+     MatSlideToggleModule,
+     MatTabsModule
   ],
   providers: [
      MatDatepickerModule,

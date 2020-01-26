@@ -1,27 +1,22 @@
-<mat-toolbar color="primary" fxLayout="row" fxLayout.xs="column"> 
-    <span class="toolbar-title" fxFlex fxLayoutAlign="center center"> Jorge.co.uk</span>
-    <div class="toolbar-nav-buttons" fxFlex="90%" fxLayoutGap="3%" fxLayoutAlign="end start">
+<mat-toolbar color="primary" fxLayout="row" fxLayout.xs="column">
+  <mat-toolbar-row>
+    <div class="toolbar-title" fxFlex fxLayoutAlign="start start" fxLayoutAlign.xs="center center">
+      <span>Jorge.co.uk</span>
+      <span></span>
+    </div>
+    <div class="toolbar-nav-buttons" fxFlex="90%" fxLayoutGap="2%" fxLayoutAlign="end start">
       <a mat-raised-button>Home</a>
-      <a mat-raised-button>My Work</a>
       <a mat-raised-button>Contact</a>
+      <span></span>
     </div>
     <div class="toolbar-theme-toggle" fxFlex fxLayoutAlign="end start">
+      <mat-icon>highlight</mat-icon>
       <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before" (change)="toggleDarkTheme($event.checked)" fxLayoutAlign="center center"></mat-slide-toggle>
     </div>
-</mat-toolbar>
-
-<!-- 
-
-  <mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>Jorge's Material App</span>
-    <span class="header-spacer"></span>
-    <button mat-mini-fab class="header-icon" (click)="changeTheme('light-theme')"></button>
-    <button mat-raised-button (click)="changeTheme('light-theme')">Toggle Theme</button>
   </mat-toolbar-row>
 </mat-toolbar>
 
-
+<!-- 
 <mat-menu #themeMenu="matMenu" xPosition="after">
   <mat-grid-list cols="2" class="mat-grid-list">
     
