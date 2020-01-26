@@ -1,15 +1,13 @@
-<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="start center">
-  <mat-toolbar-row>
-    <span> Jorge.co.uk</span>
-    <!-- <span class="fill-remaining-space"></span> -->
-    <span class="fill-remaining-space"></span>
-    <a mat-raised-button>Home</a>
-    <a mat-raised-button>My Work</a>
-    <a mat-raised-button>Contact</a>
-    <div>
-      <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before" (change)="toggleDarkTheme($event.checked)"></mat-slide-toggle>
+<mat-toolbar color="primary" fxLayout="row" fxLayout.xs="column"> 
+    <span class="toolbar-title" fxFlex fxLayoutAlign="center center"> Jorge.co.uk</span>
+    <div class="toolbar-nav-buttons" fxFlex="90%" fxLayoutGap="3%" fxLayoutAlign="end start">
+      <a mat-raised-button>Home</a>
+      <a mat-raised-button>My Work</a>
+      <a mat-raised-button>Contact</a>
     </div>
-  </mat-toolbar-row>
+    <div class="toolbar-theme-toggle" fxFlex fxLayoutAlign="end start">
+      <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before" (change)="toggleDarkTheme($event.checked)" fxLayoutAlign="center center"></mat-slide-toggle>
+    </div>
 </mat-toolbar>
 
 <!-- 
