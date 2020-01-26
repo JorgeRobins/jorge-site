@@ -1,11 +1,12 @@
-mat-toolbar-row {
-  justify-content: space-between;
-}
-
 mat-slide-toggle {
   font-size: .875rem;
   margin-left: 20px;
   margin-bottom: 10px;
+  
+}
+
+mat-toolbar-row {
+  justify-content: space-between;
 }
 
 fill-remaining-space {
@@ -14,6 +15,7 @@ fill-remaining-space {
 }
 
 /*
+
 
 .header img {
   //float: left;
