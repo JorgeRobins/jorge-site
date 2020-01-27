@@ -1,12 +1,14 @@
 .avatar-image {
-  background-image: url('https://scontent-lht6-1.cdninstagram.com/vp/4f174c1d096cf0683ffcc65d7a35f02e/5E56D428/t51.2885-15/sh0.08/e35/s640x640/20347328_331368633971650_7586511694851997696_n.jpg?_nc_ht=scontent-lht6-1.cdninstagram.com&_nc_cat=110');
+  background-image: url("../../assets/images/david_transparent.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 mat-card-actions {
   padding-left: 0.4rem;
 }
 
-.intro-card {
-  padding-left: 0.4rem;
+.container {
+  margin-bottom: 3rem;
 }
