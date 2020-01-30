@@ -9,8 +9,10 @@
       <span></span>
     </div>
     <div class="toolbar-theme-toggle" fxFlex fxLayoutAlign="end start">
-      <mat-icon>highlight</mat-icon>
-      <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before" (change)="toggleDarkTheme($event.checked)" fxLayoutAlign="center center"></mat-slide-toggle>
+      <!-- <mat-icon>highlight</mat-icon> -->
+      <mat-icon>brightness_5</mat-icon>
+      <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)" fxLayoutAlign="center center"></mat-slide-toggle>
+      <mat-icon class="moon-icon">brightness_3</mat-icon>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
