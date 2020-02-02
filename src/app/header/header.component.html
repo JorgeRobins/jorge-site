@@ -1,8 +1,7 @@
 <mat-toolbar color="primary" fxLayout="row" fxLayout.xs="column">
   <mat-toolbar-row>
-    <div class="toolbar-title" fxFlex fxLayoutAlign="start start" fxLayoutAlign.xs="center center">
+    <div class="toolbar-title" fxFlex fxLayoutAlign="end start" fxLayoutAlign.xs="center center">
       <span>Jorge.co.uk</span>
-      <span></span>
     </div>
     <div class="toolbar-nav-buttons" fxFlex="90%" fxLayoutGap="2%" fxLayoutAlign="end start">
       <a mat-raised-button>Home</a>
@@ -10,8 +9,10 @@
       <span></span>
     </div>
     <div class="toolbar-theme-toggle" fxFlex fxLayoutAlign="end start">
-      <mat-icon>highlight</mat-icon>
-      <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before" (change)="toggleDarkTheme($event.checked)" fxLayoutAlign="center center"></mat-slide-toggle>
+      <!-- <mat-icon>highlight</mat-icon> -->
+      <mat-icon>brightness_5</mat-icon>
+      <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)" fxLayoutAlign="center center"></mat-slide-toggle>
+      <mat-icon class="moon-icon">brightness_3</mat-icon>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
